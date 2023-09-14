@@ -7,6 +7,9 @@ const Home = () => {
     // set data to the state using useState 
     const[allCourse, setAllCourse] = useState([])
     const[selectedCourse, setSelectedCourse] = useState([])
+    const[remainingCredit, setRemainingCredit] = useState(0)
+    const[totalCredit, setTotalCredit] = useState(0)
+    const[totalPrice, setTotalPrice] = useState()
 
     // data fetch using useEffect
     useEffect(()=>{
@@ -17,7 +20,24 @@ const Home = () => {
 
     //button handle create
     const handleSelectCourse = (course) =>{
-        setSelectedCourse([...selectedCourse, course])
+        const isExist = selectedCourse.find(item=>item.id === course.id)
+        let count = course.credit
+        let coursePrice = course.price
+        if(isExist){
+            return alert('The course is already Exist')
+        }
+        else{
+            selectedCourse.forEach((item) => {
+                count += item.credit
+                coursePrice += item.price
+            })
+            const totalRemainingCredit = 20 - count
+            setTotalCredit(count)
+            setRemainingCredit(totalRemainingCredit)
+            setTotalPrice(coursePrice)
+            setSelectedCourse([...selectedCourse, course])
+        }
+        
     } 
     // console.log(selectedCourse)
 
@@ -46,7 +66,7 @@ const Home = () => {
                 {/* cart container */}
 
                 <div className='cart-container'>
-                    <Cart selectedCourse={selectedCourse}></Cart>
+                    <Cart selectedCourse={selectedCourse} remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice}></Cart>
                 </div>
 
             </div>
