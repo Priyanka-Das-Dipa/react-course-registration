@@ -1,0 +1,39 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home-container{
+    display:flex;
+}
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: aliceblue;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+}
+.price-credit{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.btn{
+    width: 280px;
+    height: 30px;
+    background-color: rgb(98, 98, 251);
+    color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+.card-container{
+    width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+ 
+.cart-container{
+    width: 300px;
+    
+} 
