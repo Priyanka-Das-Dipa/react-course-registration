@@ -48,17 +48,21 @@ const Home = () => {
                 <div className='card-container'>
                     {
                         allCourse.map((course) => (
-                            <div className="card">
-                                <div className='card-img'>
-                                    <img key={course.id} src={course.image} alt="" />
+                            <div key={course.id} className="card w-96 bg-base-100 shadow-xl">
+                                <figure className="px-10 pt-10">
+                                    <img src={course.image} alt="Shoes" className="w-full" />
+                                </figure>
+                                <div className="card-body items-center text-center">
+                                    <h2 className="card-title">{course.course_name}</h2>
+                                    <p>{course.course_description}</p>
+                                    <div className='flex gap-4'>
+                                        <h3>$  Price: {course.price}</h3>
+                                        <h3>Credit: {course.credit} hr</h3>
+                                    </div>
+                                    <div className="card-actions">
+                                    <button onClick={()=>handleSelectCourse(course)}  className="btn btn-primary">Submit</button>
+                                    </div>
                                 </div>
-                                <h3>{course.course_name}</h3>
-                                <p>{course.course_description}</p>
-                                <div className='price-credit'>
-                                    <h3>$ Price: {course.price}</h3>
-                                    <h3>Credit: {course.credit} hr</h3>
-                                </div>
-                                <button onClick={()=>handleSelectCourse(course)} className='btn'>Submit</button>
                             </div>
                         ))
                     }

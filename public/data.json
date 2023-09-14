@@ -3,7 +3,7 @@
       "id": 1,
       "image": "https://i.ibb.co/gzt4pm5/Rectangle-2-2.png",
       "course_name": "Introduction to C Programming",
-      "course_description": "C is a general-purpose high level language that was originally developed by Dennis Richie for the Unix operating system. It was first implemented on the Digital Equipment Corporation PDP-11 computer in 1972. ",
+      "course_description": "C is a general-purpose high level language that was originally developed by Dennis Richie for the Unix operating system.",
       "price": 15000,
       "credit": 1
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "image": "https://i.ibb.co/WHKJRYb/Rectangle-2-3.png",
       "course_name": "Introduction to Algorithm",
-      "course_description": "An algorithm is a step-wise representation of a solution to a given problem. In an Algorithm the problem is broken down into smaller pieces or steps hence, it is easier for the programmer to convert it into an actual program.",
+      "course_description": "An algorithm is a set of steps of operations to solve a problem performing calculation, data processing, and automated reasoning tasks. ",
       "price": 25000,
       "credit": 2
     },
@@ -19,7 +19,7 @@
       "id":3,
       "image": "https://i.ibb.co/pfqhchz/Rectangle-2-4.png",
       "course_name": "Introduction to C++ for DSA",
-      "course_description": "Key concepts of C++ DSA include Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs. Common Algorithms in C++ DSA include Sorting, Searching, Graph, and Dynamic Programming Algorithms.",
+      "course_description": "Key concepts of C++ DSA include Arrays, Linked Lists, Stacks, Queues, Trees, and Graphs. Common Algorithms in C++ DSA include Sorting, Searching, etc.",
       "price": 10000,
       "credit": 10
     },
@@ -27,7 +27,7 @@
       "id":4,
       "image": "https://i.ibb.co/k3CcyyX/Rectangle-3.png",
       "course_name": "Basic Data Structures",
-      "course_description": "The data structure name indicates itself that organizing the data in memory. There are many ways of organizing the data in the memory as we have already seen one of the data structures, i.e., array in C language.",
+      "course_description": "A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures also.",
       "price": 35000,
       "credit": 5
     },
@@ -35,7 +35,7 @@
       "id":5,
       "image": "https://i.ibb.co/pZb25mK/Rectangle-2.png",
       "course_name": "Introduction to OOP Python",
-      "course_description": "Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming.It aims to implement real-world entities like inheritance etc. in the programming.",
+      "course_description": "Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc in programming.",
       "price": 19000,
       "credit": 5
     },
@@ -43,7 +43,7 @@
       "id":6,
       "image": "https://i.ibb.co/p2cYnTH/Rectangle-2-5.png",
       "course_name": "Software Engineering",
-      "course_description": "Software engineering is an engineering discipline that's applied to the development of software in a systematic approach (called a software process). It's the application of theories, methods, and tools to design and build a software .",
+      "course_description": "Software engineering is an engineering discipline that's applied to the development of software in a systematic approach (called a software process).",
       "price": 23000,
       "credit": 2
     },
@@ -51,7 +51,7 @@
       "id":7,
       "image": "https://i.ibb.co/LRCyrpX/Rectangle-3-1.png",
       "course_name": "AWS, Cloud Computing",
-      "course_description": "AWS (Amazon Web Services) is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS) and packaged-software-as-a-service (SaaS) offerings.",
+      "course_description": "AWS is a comprehensive, evolving cloud computing platform provided by Amazon that includes a mixture of infrastructure-as-a-service offerings.",
       "price": 35000,
       "credit": 5
     },
@@ -59,7 +59,7 @@
       "id":8,
       "image": "https://i.ibb.co/5TdKcqr/Rectangle-2-1.png",
       "course_name": "Database (MySQL)",
-      "course_description": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).",
+      "course_description": "A database is an organized collection of structured information, or data, typically stored electronically in a computer system.",
       "price": 19000,
       "credit": 5
     },
