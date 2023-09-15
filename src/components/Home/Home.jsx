@@ -31,21 +31,22 @@ const Home = () => {
                 count += item.credit
                 coursePrice += item.price
             })
+            // eslint-disable-next-line no-undef
             const totalRemainingCredit = 20 - count
-            if(totalRemainingCredit < 0)
-            {
-                alert('Your Remaining hour is 0.')
+            if(count > 20 && totalRemainingCredit < 0){
+                alert('Your remaining credit hour can not be negative and total credit hour is should less then or equal to 20 credit!!')
             }
             else{
+                
                 setTotalCredit(count)
                 setRemainingCredit(totalRemainingCredit)
                 setTotalPrice(coursePrice)
                 setSelectedCourse([...selectedCourse, course])
             }
+        
         }
         
     } 
-    // console.log(selectedCourse)
 
     return (
         <div className='container'>
@@ -63,8 +64,15 @@ const Home = () => {
                                     <h2 className="card-title text-xl font-semibold">{course.course_name}</h2>
                                     <p>{course.course_description}</p>
                                     <div className='flex gap-4'>
-                                        <h3>$  Price: {course.price}</h3>
-                                        <h3>Credit: {course.credit} hr</h3>
+                                        <div className='flex gap-2'>
+                                            <img src={'https://i.ibb.co/RvMnKf3/dollar-sign-1.png'} alt="" />
+                                            <h3> Price: {course.price}</h3>
+                                        </div>
+                                        <div className='flex gap-1'>
+                                            <img src={'https://i.ibb.co/6DtncpQ/Frame.png'} alt="" />
+                                            <h3>Credit: {course.credit}hr</h3>
+                                        </div>
+                                        
                                     </div>
                                     <div className="card-actions">
                                     <button onClick={()=>handleSelectCourse(course)}  className="btn btn-primary">Submit</button>
