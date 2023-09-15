@@ -32,10 +32,16 @@ const Home = () => {
                 coursePrice += item.price
             })
             const totalRemainingCredit = 20 - count
-            setTotalCredit(count)
-            setRemainingCredit(totalRemainingCredit)
-            setTotalPrice(coursePrice)
-            setSelectedCourse([...selectedCourse, course])
+            if(totalRemainingCredit < 0)
+            {
+                alert('Your Remaining hour is 0.')
+            }
+            else{
+                setTotalCredit(count)
+                setRemainingCredit(totalRemainingCredit)
+                setTotalPrice(coursePrice)
+                setSelectedCourse([...selectedCourse, course])
+            }
         }
         
     } 
