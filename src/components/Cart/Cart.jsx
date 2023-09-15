@@ -9,14 +9,16 @@ const Cart = ({ selectedCourse, remainingCredit, totalCredit, totalPrice }) => {
             <hr />
             <h2 className='text-2xl font-semibold text-left py-2'>Course Name:</h2>
             <div className='text-left text-[16px] py-2'>
+                <ol>
                 {
-                    selectedCourse.map((course) => (
+                    selectedCourse.map((course, index) => (
                         
-                        <ol className='' key={course.id}>{course.course_name}</ol>
+                        <li className='font-medium' key={course.id}>{index+1}. {course.course_name}</li>
                        
                         
                     ))
                 }
+                </ol>
             </div>
             <hr />
             <h3 className='py-2 text-lg font-medium text-left'>Total Credit Hour:  {totalCredit} </h3>
