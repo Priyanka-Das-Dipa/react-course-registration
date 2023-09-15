@@ -9,7 +9,7 @@ const Home = () => {
     const[selectedCourse, setSelectedCourse] = useState([])
     const[remainingCredit, setRemainingCredit] = useState(0)
     const[totalCredit, setTotalCredit] = useState(0)
-    const[totalPrice, setTotalPrice] = useState()
+    const[totalPrice, setTotalPrice] = useState(0)
 
     // data fetch using useEffect
     useEffect(()=>{
@@ -56,11 +56,11 @@ const Home = () => {
                 <div className='w-4/3 grid grid-cols-3 gap-4'>
                     {
                         allCourse.map((course) => (
-                            <div key={course.id} className="bg-base-100 shadow-xl">
+                            <div key={course.id} className="bg-base-100 shadow-xl text-center">
                                 <figure className="px-8 pt-8">
                                     <img src={course.image} alt="Shoes" className="w-full" />
                                 </figure>
-                                <div className="card-body items-center text-center">
+                                <div className="card-body items-center text-justify py-4">
                                     <h2 className="card-title text-xl font-semibold">{course.course_name}</h2>
                                     <p>{course.course_description}</p>
                                     <div className='flex gap-4'>
